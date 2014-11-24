@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flowhub Docs | Getting started (Node.js)</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <script type="text/javascript" src="//use.typekit.net/pjz8vsi.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/content.css" type="text/css" media="screen" charset="utf-8">
+
+  </head>
+  <body>
+
+    <nav id="main">
+  <ul>
+    
+    <li>
+      <a href="/getting-started-browser/">Getting started (browser)</a>
+    </li>
+    
+    <li class="active">
+      <a href="/getting-started-node/">Getting started (Node.js)</a>
+    </li>
+    
+    <li>
+      <a href="/getting-started-microflo/">Getting started (MicroFlo)</a>
+    </li>
+    
+    <li>
+      <a href="/github-integration/">GitHub integration</a>
+    </li>
+    
+    <li>
+      <a href="/flowhub-faq/">Flowhub FAQ</a>
+    </li>
+    
+  </ul>
+  <!--
+  <ul>
+    <li>
+      <a href="/support/">Need help?</a>
+    </li>
+  </ul>
+  -->
+</nav>
+
+<main>
+  <h1>Getting started (Node.js)</h1>
+  <p>This guide assumes that you know the basic operation of the Flowhub app. So if you haven’t done so, it is a good idea to start with the <a href="http://flowhub.io/documentation/getting-started-browser/">browser getting started guide</a>.</p>
+
+<h2 id="prepare-a-nodejs-project-on-server-side">Prepare a Node.js project on server-side</h2>
+
+<p>To use NoFlo on the server-side, you need to set up a <a href="http://nodejs.org/">Node.js</a> project. Ensure that you have a working installation of Node.js 0.10 available. Then you can either add NoFlo to an existing project, or create a new one by:</p>
+
+<pre><code>$ mkdir noflo-example
+$ cd noflo-example
+$ npm init
+</code></pre>
+
+<p>Then install NoFlo itself with:</p>
+
+<pre><code>$ npm install noflo --save
+</code></pre>
+
+<h2 id="installing-components">Installing components</h2>
+
+<p>Unlike <a href="http://flowhub.io/documentation/getting-started-browser/">browser-side NoFlo</a>, on Node.js we don’t supply any components by default. So, to get components into your project you need to install them locally via <a href="https://www.npmjs.org/">NPM</a>. The <a href="http://noflojs.org/library/">NoFlo library listing</a> gives a pretty good overview of the common libraries available.</p>
+
+<p>To get started, we could install a set of components for filesystem access, and some “core” components.</p>
+
+<pre><code>$ npm install noflo-filesystem --save
+$ npm install noflo-core --save
+</code></pre>
+
+<h2 id="connect-your-server-to-flowhub">Connect your server to Flowhub</h2>
+
+<p>The Flowhub user interface communicates with your server-side NoFlo instance over WebSockets. For this, you need to install and set up the <a href="https://github.com/noflo/noflo-nodejs#readme">noflo-nodejs runtime</a>. Start by installing it:</p>
+
+<pre><code>$ npm install noflo-nodejs --save
+</code></pre>
+
+<p>Then we need to configure it so that it becomes available in the Flowhub user interface. For this we need your Flowhub User Identifier. Get it with:</p>
+
+<ol>
+  <li>Load <a href="http://app.flowhub.io/">app.flowhub.io</a></li>
+  <li>Click “Login” and connect Flowhub with your TheGrid account</li>
+  <li>Click “Settings” and take note of your User Identifier</li>
+</ol>
+
+<p>Then you’re ready to configure your local runtime. This is done using the <code>noflo-nodejs-init</code> command. You can set up a port, a hostname or IP address, and you also need to provide your Flowhub User Identifier. For example, run:</p>
+
+<pre><code>$ node node_modules/.bin/noflo-nodejs-init --user &lt;YOUR USER ID&gt; --host localhost --port 3569 --label "Local NoFlo Test"
+</code></pre>
+
+<p>This will create a <code>flowhub.json</code> file inside your project. You’ll usually want to add this to your <code>.gitignore</code>. You can run <code>noflo-nodejs-init --help</code> to see all the possible configuration options.</p>
+
+<h3 id="starting-the-runtime">Starting the runtime</h3>
+
+<p>Once you have a <code>flowhub.json</code> file, you can start the runtime with:</p>
+
+<pre><code>$ node node_modules/.bin/noflo-nodejs
+</code></pre>
+
+<p>This will read the configuration file and register the runtime with Flowhub. Go to <a href="http://app.flowhub.io">Flowhub</a> again and refresh the runtime list, and it will show up in your home screen under “Runtimes.”</p>
+
+<p><img src="../images/sn01-runtimes.png" alt="runtimes list showing local node server" /></p>
+
+<h2 id="make-a-flowhub-project">Make a Flowhub project</h2>
+
+<ol>
+  <li>Under “Projects” click “Create”</li>
+  <li>Give your project a name and label</li>
+  <li>Choose “Node.js” as the primary type<br />
+<img src="../images/sn02-create-project.png" alt="create project dialog with Node.js type selected" /></li>
+  <li>Tap “Create” and the UI should load, showing a blank canvas</li>
+  <li>Tap “Select runtime” and chose the runtime that is running on your machine</li>
+</ol>
+
+<h2 id="make-your-first-graph">Make your first graph</h2>
+
+<p>Now you should see that Flowhub is connected to your Node.js runtime, and the library should show the server-side components.</p>
+
+<p><img src="../images/sn03-search.png" alt="components available on the server" /></p>
+
+<p>To make a simple server-side filesystem read operation, you can simply add two components:</p>
+
+<ul>
+  <li><code>filesystem/ReadFile</code></li>
+  <li><code>core/Output</code></li>
+</ul>
+
+<p>Now, connect the <code>out</code> port of the ReadFile node to the <code>in</code> port of the Output node:</p>
+
+<p><img src="../images/sn04-readfile.png" alt="Connected" /></p>
+
+<p>Then you need to tell the ReadFile node which file to read. Click the node and enter an IIP to the <code>in</code> port. We could for example read the local project’s <code>package.json</code> file:</p>
+
+<p><img src="../images/sn05-iip.png" alt="Providing a filename to read" /></p>
+
+<p>If you now start the graph by clicking the “Play” button on the top-right corner, and then open the preview panel on the right you can see the output that normally would’ve been sent to <code>console.log</code> by Node.js:</p>
+
+<p><img src="../images/sn06-output.png" alt="Console output" /></p>
+
+<p>You can also see similar information by inspecting the connection itself:</p>
+
+<p><img src="../images/sn07-edge.png" alt="Edge inspection" /></p>
+
+</main>
+
+<nav id="breadcrumb">
+  <a href="https://flowhub.io/">Flowhub</a>  &gt; <a href="" >Documentation</a>
+</nav>
+
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46363984-1', 'flowhub.io');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

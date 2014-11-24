@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flowhub Docs | Getting started (browser)</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <script type="text/javascript" src="//use.typekit.net/pjz8vsi.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/content.css" type="text/css" media="screen" charset="utf-8">
+
+  </head>
+  <body>
+
+    <nav id="main">
+  <ul>
+    
+    <li class="active">
+      <a href="/getting-started-browser/">Getting started (browser)</a>
+    </li>
+    
+    <li>
+      <a href="/getting-started-node/">Getting started (Node.js)</a>
+    </li>
+    
+    <li>
+      <a href="/getting-started-microflo/">Getting started (MicroFlo)</a>
+    </li>
+    
+    <li>
+      <a href="/github-integration/">GitHub integration</a>
+    </li>
+    
+    <li>
+      <a href="/flowhub-faq/">Flowhub FAQ</a>
+    </li>
+    
+  </ul>
+  <!--
+  <ul>
+    <li>
+      <a href="/support/">Need help?</a>
+    </li>
+  </ul>
+  -->
+</nav>
+
+<main>
+  <h1>Getting started (browser)</h1>
+  <p>Follow these directions to make a “Hello World” NoFlo browser project with two nodes and one edge.</p>
+
+<p>We recommend Chrome 33+ or Firefox 28+.</p>
+
+<h2 id="make-a-project">Make a project</h2>
+
+<ol>
+  <li>Load <a href="http://app.flowhub.io">app.flowhub.io</a></li>
+  <li>Log in (optional, <a href="../github-integration/">more info</a>)</li>
+  <li>Under “Projects” click “Create”</li>
+  <li>Give your project a name and label</li>
+  <li>Choose “Browser” as the primary type. (Unless you have set up a Node runtime, that will be the only option.)</li>
+  <li>Tap “Create” and the UI should load, showing a blank canvas</li>
+</ol>
+
+<p><img src="../images/sb01-create.png" alt="create new project" /></p>
+
+<h2 id="search-and-add-components">Search and add components</h2>
+
+<ol>
+  <li>In the top-left is the library search box, tap there to show search input<br />
+<img src="../images/sb02-search-box.png" alt="awesome box" /></li>
+  <li>Search for “alert,” then tap <code>prompts/Alert</code> to add that component to your graph<br />
+<img src="../images/sb03-search-alert.png" alt="searching for alert" /></li>
+  <li>Search for and add one <code>core/Repeat</code> component</li>
+  <li>Move them so <code>Alert</code> is to the right of <code>Repeat</code></li>
+</ol>
+
+<p><img src="../images/sb04-components.png" alt="two components, 'core/Repeat' and 'prompts/Alert'" /></p>
+
+<h2 id="navigate">Navigate</h2>
+
+<p>Pan the graph by dragging the background. Zoom with scroll wheel, 2-finger scroll gesture, or pinch.</p>
+
+<p>If part of the graph is not in the window, a minimap should appear in the bottom-right. You can click that to fit the graph to the window.</p>
+
+<h2 id="connect">Connect</h2>
+
+<p>There are several ways to connect nodes, depending on your setup and personal preference. You can either tap one port and then the other, or drag from one port to the other. If you are zoomed out, you can open the node context menu by tap-and-hold or secondary click. Then you can tap one of the the expanded port names to start a connection.</p>
+
+<ol>
+  <li>Connect <code>Repeat</code>’s <code>out</code> port to <code>Alert</code>’s <code>in</code> port</li>
+  <li>Click on this new edge to see its inspector and change the edge color</li>
+</ol>
+
+<p><img src="../images/sb05-connect.png" alt="two components connected 'out' to 'in'" /></p>
+
+<h2 id="inspect-a-component-and-edit-its-initial-information-packets">Inspect a component and edit its initial information packets</h2>
+
+<p>Initial information packets (IIPs) are the data that is send to the process when the network starts. <code>core/Repeat</code> will send that data on to anything connected, which makes it a good way to automatically start a network.</p>
+
+<ol>
+  <li>Tap the <code>Repeat</code> node to see its inspector</li>
+  <li>In the text input field by <code>in</code>, type “hello world”</li>
+</ol>
+
+<p><img src="../images/sb06-iip.png" alt="node inspector and IIP" /></p>
+
+<h2 id="run">Run</h2>
+
+<ol>
+  <li>In the top-left is a play icon with the words “not started,” tap it to start the network<br />
+<img src="../images/sb07-runtime.png" alt="start runtime" /></li>
+  <li>The preview panel should open, and the “hello world” alert should pop up</li>
+</ol>
+
+<p>Congratulations! Your first client-side NoFlo graph is running.</p>
+
+<h2 id="further-exploration">Further exploration</h2>
+
+<p>The preview graph runs in an iframe. If you want to have some HTML content ready there when you start the graph, tap the cog icon by the search box. This will open the graph settings dialog, where you can put HTML in the “preview contents” text area. The <a href="http://app.flowhub.io/#example/7135158">clock example</a> illustrates setting up and manipulating DOM elements like this.</p>
+
+</main>
+
+<nav id="breadcrumb">
+  <a href="https://flowhub.io/">Flowhub</a>  &gt; <a href="" >Documentation</a>
+</nav>
+
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46363984-1', 'flowhub.io');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

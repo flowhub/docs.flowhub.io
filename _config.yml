@@ -1,0 +1,6 @@
+title: Flowhub Docs
+permalink: /:title/
+baseurl: ""
+markdown: kramdown
+exclude:
+  - "README.md"
