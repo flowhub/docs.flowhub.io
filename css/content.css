@@ -31,7 +31,7 @@ blockquote {
 li {
 }
 code {
-  white-space: nowrap;
+  white-space: pre-wrap;
   margin: 0px;
   border: 1px solid #DDD;
   background-color: #F8F8F8;
