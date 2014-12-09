@@ -55,6 +55,12 @@ This will read the configuration file and register the runtime with Flowhub. Go 
 
 ![runtimes list showing local node server](../images/sn01-runtimes.png)
 
+Alternatively you can also edit your package.json and add these line to the scripts section before "test":
+
+    "start": "node node_modules/.bin/noflo-nodejs",
+
+This lets you start the runtime using 'npm start'.
+
 ## Make a Flowhub project
 
 1.  Under "Projects" click "Create"
