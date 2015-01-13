@@ -33,11 +33,16 @@ If you want to run it locally instead of on Heroku, you can follow the
 
 ## Testing imgflo runtime in live mode
 
-Note: When in live mode, your graph changes are not stored.
-See next section for how to get project persistance.
+Open in browser `http://YOURAPP.herokuapps.com` (or `http://localhost:3569` if running locally)
+
+Click on `Open in Flowhub`. This should now open the IDE and show the running graph.
+
+If you now change a property, and open the right side panel you should see output data.
 
     TODO: picture how to run
 
+Note: When in live mode, your graph changes are not stored.
+See next section for how to get project persistance.
 
 ## Adding runtime for project mode use
 
@@ -45,7 +50,11 @@ Manual runtime configuration
 
 Runtimes -> Add new runtime -> Add manually
 
-Enter hostname
+Enter hostname to be `YOURAPP.herokuapps.com`
+
+Runtime type should be `imgflo`
+
+    TODO: picture
 
 ## Create new project
 
