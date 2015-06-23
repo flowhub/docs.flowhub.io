@@ -15,6 +15,16 @@ When you log into Flowhub we will perform authentication with GitHub that grants
 5.  Tap "Settings" and verify that we received a GitHub token
     ![](../images/gh01-user-settings.png)
 
+## Enabling private GitHub repositories
+
+1. Log into [app.flowhub.io](http://app.flowhub.io/)
+2. Click "Settings"
+3. Click the refresh icon under "Flowhub plan"
+4. Click "Login" (authorize on GitHub)
+    ![](../images/ghn-01-settings.png)
+
+Once complete, your account will read, "Everything up to date" in your settings panel.
+
 ## Push project to GitHub
 
 If you don't have any projects yet, try the [getting started guide](../getting-started-browser/).
