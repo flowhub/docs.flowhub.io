@@ -23,7 +23,7 @@ If you don't have any projects yet, try the [getting started guide](../getting-s
 1.  Open a project that you want to push
 2.  Open the project panel by clicking the left side of the screen
 3.  Tap "Settings"  
-4.  Input your GitHub "github-username/repo-name" and save. If the repository doesn't exist it will be created for you on first push.
+4.  Input your "github-username/repo-name" and save. If the repository doesn't exist it will be created for you on first push.
     ![project settings](../images/gh03-project-settings.png)
 4.  Input project label and select your main graph from the dropdown
 5.  You should now have an area to input a commit message and upload.  
@@ -41,5 +41,5 @@ On the Flowhub main page you can switch between "On device" (saved to browser me
 4. Tap "Add"
     ![add-a-repo-name](../images/gh07-add-a-repo.png)
 
-If you're importing a project from an organization, provide "github-org-name/repo-name"
+If you're importing a project from an organization, provide "github-org-name/repo-name" instead of username.
 
