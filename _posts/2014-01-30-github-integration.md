@@ -4,7 +4,7 @@ title: GitHub integration
 categories:
  - documentation
 ---
-When you log into Flowhub we will perform authentication with GitHub that grants Flowhub access to push to your public repositories. For paid accounts, we also provide access to all [private GitHub repositories](https://github.com/pricing) that you have.
+When you log into Flowhub we will perform authentication with GitHub that grants Flowhub access to push to your public repositories. For paid accounts, we also provide access to your [private GitHub repositories](https://github.com/pricing).
 
 ## Enabling private GitHub repositories
 
@@ -12,7 +12,7 @@ When you log into Flowhub we will perform authentication with GitHub that grants
 2. Click "Settings"
 3. Click the refresh icon under "Flowhub plan"
 4. Click "Login" (authorize on GitHub)
-    ![](../images/ghn-01-settings.png)
+    ![](../images/gh01-settings.png)
 
 Once complete, your account will read, "Everything up to date" in your settings panel.
 
@@ -30,8 +30,15 @@ If you don't have any projects yet, try the [getting started guide](../getting-s
 
 ## Import project from GitHub
 
-In the Flowhub main page you should now be able to switch between "On device" (saved to browser memory) and "GitHub" (your public projects).
+On the Flowhub main page you can switch between "On device" (saved to browser memory) and "GitHub" (your Github projects).
 
-![on device and github switch](../images/gh05-device-github-switch.png)
+1. Go to Github tab within Flowhub
+	![](../images/gh05-device-github-switch.png)
+2. Tap "Add" on the Add a repository card
+	![](../images/gh06-add-a-repo.png)
+3. Provide "github-username/repo-name" of the GitHub respoitory to import
+4. Tap "Add"
+    ![](../images/gh07-add-a-repo.png)
 
-When you import a project from there, the "github-name/repo-name" setting will be set for you.
+If you're importing a project from an organization, provide "github-org-name/repo-name"
+
