@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: GitHub integration
+title: Using GitHub Repositories
 categories:
  - documentation
 ---
@@ -12,7 +12,7 @@ When you log into Flowhub we will perform authentication with GitHub that grants
 2. Click "Settings"
 3. Click the refresh icon under "Flowhub plan"
 4. Click "Login" (authorize on GitHub)
-    ![](../images/gh01-settings.png)
+    ![settings](../images/gh01-settings.png)
 
 Once complete, your account will read, "Everything up to date" in your settings panel.
 
@@ -23,8 +23,9 @@ If you don't have any projects yet, try the [getting started guide](../getting-s
 1.  Open a project that you want to push
 2.  Open the project panel by clicking the left side of the screen
 3.  Tap "Settings"  
-4.  Input your GitHub name and repository name and save. If the repository doesn't exist it will be created for you on first push.  
+4.  Input your GitHub "github-username/repo-name" and save. If the repository doesn't exist it will be created for you on first push.
     ![project settings](../images/gh03-project-settings.png)
+4.  Input project label and select your main graph from the dropdown
 5.  You should now have an area to input a commit message and upload.  
     ![commit message area and upload button](../images/gh04-commit.png)
 
@@ -33,12 +34,12 @@ If you don't have any projects yet, try the [getting started guide](../getting-s
 On the Flowhub main page you can switch between "On device" (saved to browser memory) and "GitHub" (your Github projects).
 
 1. Go to Github tab within Flowhub
-	![](../images/gh05-device-github-switch.png)
+	![device-github-switch](../images/gh05-device-github-switch.png)
 2. Tap "Add" on the Add a repository card
-	![](../images/gh06-add-a-repo.png)
+	![add-a-repo](../images/gh06-add-a-repo.png)
 3. Provide "github-username/repo-name" of the GitHub respoitory to import
 4. Tap "Add"
-    ![](../images/gh07-add-a-repo.png)
+    ![add-a-repo-name](../images/gh07-add-a-repo.png)
 
 If you're importing a project from an organization, provide "github-org-name/repo-name"
 
