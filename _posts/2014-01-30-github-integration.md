@@ -6,15 +6,6 @@ categories:
 ---
 When you log into Flowhub we will perform authentication with GitHub that grants Flowhub access to push to your public repositories. For paid accounts, we also provide access to all [private GitHub repositories](https://github.com/pricing) that you have.
 
-## Setting up GitHub access
-
-1.  Load the home page at [app.flowhub.io](http://app.flowhub.io/)
-2.  Tap "Login" and sign in to your GitHub account
-3.  After giving TheGrid permission to access your GitHub projects, you'll be redirected back to Flowhub
-4.  After a little spinning, you should see your name and icon
-5.  Tap "Settings" and verify that we received a GitHub token
-    ![](../images/gh01-user-settings.png)
-
 ## Enabling private GitHub repositories
 
 1. Log into [app.flowhub.io](http://app.flowhub.io/)
