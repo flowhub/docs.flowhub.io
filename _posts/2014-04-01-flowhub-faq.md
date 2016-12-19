@@ -50,8 +50,9 @@ We recommend Chrome 33+ or Firefox 28+. Flowhub aims to support [evergreen brows
 * Client-side JavaScript for Browser (NoFlo)
 * Server-side JavaScript for Node.js (NoFlo)
 * Desktop programming for GNOME (NoFlo)
-* Microcontrollers ([MicroFlo](https://github.com/jonnor/microflo))
-* Image processing ([ImgFlo/GEGL](https://github.com/jonnor/imgflo))
+* Microcontrollers ([MicroFlo](https://github.com/microflo/microflo))
+* Image processing ([ImgFlo/GEGL](https://github.com/imgflo/imgflo))
+* Message queues ([MsgFlo]((https://github.com/msgflo/msgflo))
 
 ###How about support for: insert favorite programming language.
 Flow-Based Programming is a paradigm that can be adapted to work with any existing programming languages. The user interface layer has been designed to be independent of the underlying FBP implementation, and so the various programming communities should be able to connect it with their flow-based environments. Making it work with Actor Based and Functional Reactive systems should be especially easy.
