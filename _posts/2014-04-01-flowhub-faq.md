@@ -57,7 +57,7 @@ We recommend Chrome 33+ or Firefox 28+. Flowhub aims to support [evergreen brows
 ###How about support for: insert favorite programming language.
 Flow-Based Programming is a paradigm that can be adapted to work with any existing programming languages. The user interface layer has been designed to be independent of the underlying FBP implementation, and so the various programming communities should be able to connect it with their flow-based environments. Making it work with Actor Based and Functional Reactive systems should be especially easy.
 
-Please refer to the [FBP Network Protocol documentation](http://noflojs.org/documentation/protocol/) for details how to connect your own Flow-Based or dataflow environment with Flowhub.
+Please refer to the [FBP Network Protocol documentation](https://flowbased.github.io/fbp-protocol) for details how to connect your own Flow-Based or dataflow environment with Flowhub.
 
 ###Does Flowhub require an internet connection?
 No, Flowhub is built with the [offline first](http://offlinefirst.org/) philosophy, and works fine without an internet connection once you've installed it.
@@ -92,22 +92,18 @@ However, a possible workaround is to create a secondary GitHub user for Flowhub 
 
 ## Payments/Licenses
 
-###Pre-order License
-Flowhub is free to use for public projects and open source development. Private project development & collaboration is reserved for paid plans. Pre-order licenses are offered during the pre-order period at a discount to regular pricing. Pre-order licenses will automatically convert to their respective higher priced paid plans upon public release of Flowhub.
+Flowhub is free to use for public projects and open source development!
 
-You can view the different pre-order license tiers and associated regular priced paid plans on our [pre-order page](http://flowhub.io/preorder/).
+### Pro plan
+Private project development & collaboration is reserved for paid plans.
+You can view the different plans on our [pricing page](http://flowhub.io/pricing/).
 
 ###Kickstarter License
-Our [Kickstarter backers](http://noflojs.org/kickstarter/) are welcome to participate in the Flowhub beta testing program. The license rewards from the [Kickstarter](http://www.kickstarter.com/projects/noflo/noflo-development-environment) will be activated in Flowhub at the end of the beta testing period.
 
-###Lifetime Discount
-Lifetime discount allows the pre-order license holder to lock-in a discounted rate for future renewals of the associated paid plans. Renewals must be made on a consecutive yearly basis, otherwise the discount will expire. 
+Reward Plans from the [NoFlo Kickstarter](http://noflojs.org/kickstarter/) were activated on January 1, 2015 on an
+[update on Kickstarter](https://www.kickstarter.com/projects/noflo/noflo-development-environment/posts/985898) with instructions to claim your reward. Kickstarter Reward Plans offer the same features as a Flowhub Pro Plan.
 
-###When will the pre-order period end?
-As soon as the public release and/or conversion of pre-order licenses into paid plans, expected June 2014.
-
-###What’s the current status of Flowhub?
-We are currently in public beta.
+Our [Kickstarter backers] are welcome to participate in the Flowhub beta testing program. The license rewards from the [Kickstarter](http://www.kickstarter.com/projects/noflo/noflo-development-environment) will be activated in Flowhub at the end of the beta testing period.
 
 ###Where is the source code?
-Flowhub is built on the [Kickstarter-backed](http://noflojs.org/kickstarter/) open source [NoFlo Development Environment](https://github.com/noflo/noflo-ui), which is available under the MIT license. The productized Flowhub version adds capabilities that require network infrastructure, like GitHub integration, real-time collaboration and runtime discovery.
+Flowhub is built on the [Kickstarter-backed](http://noflojs.org/kickstarter/) open source [NoFlo Development Environment](https://github.com/noflo/noflo-ui), which is available under the MIT license. The hosted Flowhub version adds capabilities that require backend infrastructure, like GitHub integration and runtime discovery.
