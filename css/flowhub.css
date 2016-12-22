@@ -64,7 +64,7 @@ nav.main ul ul {
 nav.main ul li {
   padding-left: var(--unit-quarter);
   padding-right: var(--unit-quarter);
-  list-style: none;
+  list-style: none !important;
 }
 
 nav.main ul li.home {
