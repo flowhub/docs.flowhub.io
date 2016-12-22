@@ -669,13 +669,28 @@ body.page main > nav.sub {
   background-color: hsla(  0, 98%, 100%, 1);
   flex: 1;
   min-width: 15em;
+  padding-top: var(--unit-full);
+  margin-right: -72px;
+  display: block;
+  align-self: flex-start;
+}
+body.page main > nav.sub h2 {
+  font-size: 1.1em;
+  margin: 0px;
+  padding-left: var(--unit-double);
+  margin-bottom: var(--unit-half);
 }
 body.page main > nav.sub ul {
   margin: 0px;
-  padding-top: var(--unit-full);
   padding-left: var(--unit-double);
 }
-@media (max-width: 600px) {
+@media (max-width: 630px) {
+  body.page main > nav.sub {
+    margin-right: 0px;
+  }
+  body.page main > nav.sub h2 {
+    padding-left: 0px;
+  }
   body.page main > nav.sub ul {
     padding-left: 0px;
   }
@@ -685,6 +700,9 @@ body.page main > nav.sub li {
   margin-bottom: var(--unit-half);
   font-family: 'Source Code Pro', sans-serif;
   font-size: 1.1em;
+}
+body.page main > nav.sub li:last-child {
+  margin-bottom: var(--unit-full);
 }
 body.page main > nav.sub li a {
   color: black;
