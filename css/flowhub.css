@@ -640,19 +640,22 @@ body.page ul li {
   list-style-type: circle;
 }
 body.page main > article {
+  box-sizing: border-box;
   width: 62%;
   flex: 2;
+  display: block;
 }
 body.page main > article img {
-  max-width: 100%;
+  max-width: 99%;
 }
 body.page main > article code {
-  max-width: 100%;
+  max-width: 99%;
   font-family: 'Source Code Pro', sans-serif;
 }
 body.page main > article div.highlighter-rouge {
-  max-width: 100%;
-  overflow-x: auto;
+  box-sizing: border-box;
+  width: 99%;
+  overflow-x: auto !important;
   padding: var(--unit-half);
   background-color: hsl(187, 31%, 6%);
   color: hsla( 187, 31%, 90%, .8) !important;
