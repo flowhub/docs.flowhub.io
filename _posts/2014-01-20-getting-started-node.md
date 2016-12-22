@@ -66,9 +66,10 @@ This lets you start the runtime using 'npm start'.
 1.  Under "Projects" click "Create"
 2.  Give your project a name and label
 3.  Choose "Node.js" as the primary type  
-    ![create project dialog with Node.js type selected](../images/sn02-create-project.png)
 4.  Tap "Create" and the UI should load, showing a blank canvas
 5.  Tap "Select runtime" and chose the runtime that is running on your machine
+
+![create project dialog with Node.js type selected](../images/sn02-create-project.png)
 
 ## Make your first graph
 

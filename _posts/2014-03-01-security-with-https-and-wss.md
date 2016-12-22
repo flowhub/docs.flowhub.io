@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Security with https and wss
+title: Security with HTTPS and WSS
 categories:
  - documentation
 ---

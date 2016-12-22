@@ -81,7 +81,7 @@ To make a simple processing graph, you can add the following components.
 
 And connect them:
 
-![simple imgflo graph connected](../images/imgflo-components-connected.png)
+![simple imgflo graph connected](../images/imgflo-nodes-connected.png)
 
 Select the `gegl/load` node, and click `Choose File` to open the file to process.
 Note: should not be larger than 2000x2000 pixels, as the data gets serialized as a dataURL.
