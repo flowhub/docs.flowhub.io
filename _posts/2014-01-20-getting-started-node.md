@@ -1,8 +1,9 @@
 ---
 layout: documentation
-title: Getting started (Node.js)
+navtitle: NoFlo on Node.js
+title: Getting started with NoFlo on Node.js
 categories:
- - documentation
+ - getting-started
 ---
 This guide assumes that you know the basic operation of the Flowhub app. So if you haven't done so, it is a good idea to start with the [browser getting started guide](http://flowhub.io/documentation/getting-started-browser/).
 

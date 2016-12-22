@@ -9,6 +9,15 @@ layout: default
       {{ content }}
       </article>
       <nav class="sub">
+        <h2>Getting started</h2>
+        <ul>
+          {% for post in site.categories['getting-started'] reversed %}
+          <li{% if post.url == page.url %} class="active"{% endif%}>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.navtitle }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <h2>General</h2>
         <ul>
           {% for post in site.categories['documentation'] reversed %}
           <li{% if post.url == page.url %} class="active"{% endif%}>

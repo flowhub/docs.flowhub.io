@@ -1,8 +1,9 @@
 ---
 layout: documentation
-title: Getting started (browser)
+navtitle: NoFlo on browser
+title: Getting started with NoFlo on the browser
 categories:
- - documentation
+ - getting-started
 ---
 
 Follow these directions to make a "Hello World" NoFlo browser project with two nodes and one edge.

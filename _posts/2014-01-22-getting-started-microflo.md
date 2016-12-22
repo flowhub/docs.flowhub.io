@@ -1,8 +1,9 @@
 ---
 layout: documentation
-title: Getting started (MicroFlo)
+navtitle: MicroFlo
+title: Getting started with MicroFlo
 categories:
- - documentation
+ - getting-started
 ---
 
 ## Prepare your microcontroller for talking to Flowhub

@@ -1,8 +1,9 @@
 ---
 layout: documentation
-title: Getting started (imgflo)
+navtitle: imgflo
+title: Getting started with imgflo
 categories:
- - documentation
+ - getting-started
 ---
 This guide assumes that you know the basic operation of the Flowhub app.
 So if you haven't done so, it is a good idea to start with the
