@@ -1,8 +1,9 @@
 ---
 layout: documentation
-title: Getting started (Node.js)
+navtitle: NoFlo on Node.js
+title: Getting started with NoFlo on Node.js
 categories:
- - documentation
+ - getting-started
 ---
 This guide assumes that you know the basic operation of the Flowhub app. So if you haven't done so, it is a good idea to start with the [browser getting started guide](http://flowhub.io/documentation/getting-started-browser/).
 
@@ -66,9 +67,10 @@ This lets you start the runtime using 'npm start'.
 1.  Under "Projects" click "Create"
 2.  Give your project a name and label
 3.  Choose "Node.js" as the primary type  
-    ![create project dialog with Node.js type selected](../images/sn02-create-project.png)
 4.  Tap "Create" and the UI should load, showing a blank canvas
 5.  Tap "Select runtime" and chose the runtime that is running on your machine
+
+![create project dialog with Node.js type selected](../images/sn02-create-project.png)
 
 ## Make your first graph
 

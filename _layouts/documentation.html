@@ -1,28 +1,29 @@
 ---
 layout: default
 ---
-<nav id="main">
-  <ul>
-    {% for post in site.categories['documentation'] reversed %}
-    <li{% if post.url == page.url %} class="active"{% endif%}>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  <!--
-  <ul>
-    <li>
-      <a href="{{ site.baseurl }}/support/">Need help?</a>
-    </li>
-  </ul>
-  -->
-</nav>
-
-<main>
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-</main>
-
-<nav id="breadcrumb">
-  <a href="https://flowhub.io/">Flowhub</a>  &gt; <a href="{{ site.baseurl }}" {% if page.url == '/documentation/index.html' %} class="active"{% endif%}>Documentation</a>
-</nav>
+    <header class="{% if page.color %}{{ page.color }}{% else %}route6{% endif %}">
+    </header>
+    <main>
+      <article>
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+      </article>
+      <nav class="sub">
+        <h2>Getting started</h2>
+        <ul>
+          {% for post in site.categories['getting-started'] reversed %}
+          <li{% if post.url == page.url %} class="active"{% endif%}>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.navtitle }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <h2>General</h2>
+        <ul>
+          {% for post in site.categories['documentation'] reversed %}
+          <li{% if post.url == page.url %} class="active"{% endif%}>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </main>

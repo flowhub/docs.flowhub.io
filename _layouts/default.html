@@ -1,5 +1,17 @@
-{% include head.html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }} | {{ page.title }}</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/flowhub.css">
+  </head>
 
+  <body class="page">
+    {% include nav-main.html %}
     {{ content }}
-
-{% include foot.html %}
+    {% include nav-footer.html %}
+    {% include track.html %}
+  </body>
+</html>
