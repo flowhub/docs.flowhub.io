@@ -37,7 +37,7 @@ The Flowhub user interface communicates with your server-side NoFlo instance ove
 Then we need to configure it so that it becomes available in the Flowhub user interface. For this we need your Flowhub User Identifier. Get it with:
 
 1. Load [app.flowhub.io](http://app.flowhub.io/)
-2. Click "Login" and connect Flowhub with your TheGrid account
+2. Click "Login" and connect Flowhub with your Github account
 3. Click "Settings" and take note of your User Identifier
 
 Then you're ready to configure your local runtime. This is done using the `noflo-nodejs-init` command. You can set up a port, a hostname or IP address, and you also need to provide your Flowhub User Identifier. For example, run:

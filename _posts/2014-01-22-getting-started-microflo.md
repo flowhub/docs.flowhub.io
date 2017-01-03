@@ -20,7 +20,7 @@ Make sure you have Flowhub v0.2.3 or later.
 Make sure your Arduino microcontroller is connected over USB.
 
 1. Download and run the [Flowhub Chrome app](https://chrome.google.com/webstore/detail/flowhub/aacpjichompfhafnciggfpfdpfododlk)
-2. Click "Login" and connect Flowhub with your TheGrid account
+2. Click "Login" and connect Flowhub with your Github account
 3. Click the refresh button next to runtimes
 
 The MicroFlo runtime should now show up in the list of runtimes.
