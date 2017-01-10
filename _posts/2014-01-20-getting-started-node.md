@@ -50,7 +50,7 @@ This will create a `flowhub.json` file inside your project. You'll usually want 
 
 Once you have a `flowhub.json` file, you can start the runtime with:
 
-    $ node node_modules/.bin/noflo-nodejs
+    $ node node_modules/.bin/noflo-nodejs --capture-output=true
 
 This will read the configuration file and register the runtime with Flowhub. Go to [Flowhub](http://app.flowhub.io) again and refresh the runtime list, and it will show up in your home screen under "Runtimes."
 
