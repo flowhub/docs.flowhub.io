@@ -5,7 +5,7 @@ title: Getting started with NoFlo on Node.js
 categories:
  - getting-started
 ---
-This guide assumes that you know the basic operation of the Flowhub app. So if you haven't done so, it is a good idea to start with the [browser getting started guide](http://flowhub.io/documentation/getting-started-browser/).
+This guide assumes that you know the basic operation of the Flowhub app. So if you haven't done so, it is a good idea to start with the [browser getting started guide](https://docs.flowhub.io/getting-started-browser/).
 
 ## Prepare a Node.js project on server-side
 
@@ -21,7 +21,7 @@ Then install NoFlo itself with:
 
 ## Installing components
 
-Unlike [browser-side NoFlo](http://flowhub.io/documentation/getting-started-browser/), on Node.js we don't supply any components by default. So, to get components into your project you need to install them locally via [NPM](https://www.npmjs.org/). The [NoFlo library listing](http://noflojs.org/library/) gives a pretty good overview of the common libraries available.
+Unlike [browser-side NoFlo](https://docs.flowhub.io/getting-started-browser/), on Node.js we don't supply any components by default. So, to get components into your project you need to install them locally via [NPM](https://www.npmjs.org/). The [NoFlo library listing](http://noflojs.org/library/) gives a pretty good overview of the common libraries available.
 
 To get started, we could install a set of components for filesystem access, and some "core" components.
 
