@@ -5,11 +5,11 @@ title: Getting started with NoFlo on Node.js
 categories:
  - getting-started
 ---
-This guide assumes that you know the basic operation of the Flowhub app. So if you haven't done so, it is a good idea to start with the [browser getting started guide](http://flowhub.io/documentation/getting-started-browser/).
+This guide assumes that you know the basic operation of the Flowhub app. So if you haven't done so, it is a good idea to start with the [browser getting started guide](https://docs.flowhub.io/getting-started-browser/).
 
 ## Prepare a Node.js project on server-side
 
-To use NoFlo on the server-side, you need to set up a [Node.js](http://nodejs.org/) project. Ensure that you have a working installation of Node.js 0.10 available. Then you can either add NoFlo to an existing project, or create a new one by:
+To use NoFlo on the server-side, you need to set up a [Node.js](https://nodejs.org/) project. Ensure that you have a working installation of Node.js 0.10 available. Then you can either add NoFlo to an existing project, or create a new one by:
 
     $ mkdir noflo-example
     $ cd noflo-example
@@ -21,7 +21,7 @@ Then install NoFlo itself with:
 
 ## Installing components
 
-Unlike [browser-side NoFlo](http://flowhub.io/documentation/getting-started-browser/), on Node.js we don't supply any components by default. So, to get components into your project you need to install them locally via [NPM](https://www.npmjs.org/). The [NoFlo library listing](http://noflojs.org/library/) gives a pretty good overview of the common libraries available.
+Unlike [browser-side NoFlo](https://docs.flowhub.io/getting-started-browser/), on Node.js we don't supply any components by default. So, to get components into your project you need to install them locally via [NPM](https://www.npmjs.org/). The [NoFlo library listing](https://noflojs.org/library/) gives a pretty good overview of the common libraries available.
 
 To get started, we could install a set of components for filesystem access, and some "core" components.
 
@@ -36,7 +36,7 @@ The Flowhub user interface communicates with your server-side NoFlo instance ove
 
 Then we need to configure it so that it becomes available in the Flowhub user interface. For this we need your Flowhub User Identifier. Get it with:
 
-1. Load [app.flowhub.io](http://app.flowhub.io/)
+1. Load [app.flowhub.io](https://app.flowhub.io/)
 2. Click "Login" and connect Flowhub with your Github account
 3. Click "Settings" and take note of your User Identifier
 
@@ -52,7 +52,7 @@ Once you have a `flowhub.json` file, you can start the runtime with:
 
     $ node node_modules/.bin/noflo-nodejs --capture-output=true
 
-This will read the configuration file and register the runtime with Flowhub. Go to [Flowhub](http://app.flowhub.io) again and refresh the runtime list, and it will show up in your home screen under "Runtimes."
+This will read the configuration file and register the runtime with Flowhub. Go to [Flowhub](https://app.flowhub.io) again and refresh the runtime list, and it will show up in your home screen under "Runtimes."
 
 ![runtimes list showing local node server](../images/sn01-runtimes.png)
 
